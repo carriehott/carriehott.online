@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Carrie Hott projects</title>
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+<meta name="description" content="Interdisciplinary artist + designer + educator Carrie Hott">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/global.css">
+
+        
+    </head>
+    <body>
+        
+   <a href="/menu">
+    <h2 id="name">Carrie Hott</h2>
+    </a>
+   <div id="navmenu">
+    <div id="about_nav">
+    <h2 class="title">info</h2>
+    <a href="/info">
+        <h2>about</h2>
+    </a>
+      <a href="/info">
+        <h2>updates</h2>
+    </a>
+   
+    <a href="/info">
+        <h2>contact</h2>
+    </a>
+         <a href="/info">
+        <h2>this site</h2>
+    </a>
+</div>
+    <div id="project_nav">
+        <h2 class="title">projects</h2>
+        <a href="/howtoslowinternet">
+            <h2>how to slow internet</h2>
+        </a>
+        <a href="/ourshiver">
+            <h2>Our Shiver</h2>
+        </a>
+        <a href="/sixwigs">
+            <h2>Six Wigs</h2>
+        </a>
+        <a href="/fulship">
+            <h2>Full Ship</h2>
+        </a>
+        <a href="/lightsthatsee">
+            <h2>The Lights That See Us</h2>
+        </a>
+        <a href="/motionzones">
+            <h2>Motion Zones</h2>
+        </a>
+        <a href="/summernightforever">
+            <h2>Summer Night Forever</h2>
+        </a>
+        <a href="/thelightthatelongatedtheday">
+            <h2>The Light That Elongated The Day</h2>
+        </a>
+        <a href="/structureforthefugitive">
+            <h2>Structure for the Fugitive</h2>
+        </a>
+        <a href="/netsfortheunweighable">
+            <h2>Nets for the Unweighable</h2>
+        </a>
+        <a href="/aremoveaplanaplot">
+            <h2>A Remove, A Plan, A Plot</h2>
+        </a>
+        <a href="/thekeyroom">
+            <h2>The Key Room</h2>
+        </a>
+        <a href="/thearchiveroom">
+            <h2>The Archive Room</h2>
+        </a>
+        <a href="/afterhour">
+            <h2>After Hour</h2>
+        </a>
+        <a href="/fathomingacave">
+            <h2>Fathoming A Cave</h2>
+        </a>
+        <a href="/coverfire">
+            <h2>Cover Fire</h2>
+        </a>
+            <a href="/understandingawhalefall">
+        <h2>Understanding A Whale Fall</h2>
+        </a>
+    </div> 
+
+    <div id="media_nav">
+    <h2 class="title">media</h2>
+    <a href="/websites">
+        <h2>websites</h2>
+    </a>
+
+    <a href="/publications">
+        <h2>print media</h2>
+    </a>
+
+    <a href="/exhibitions">
+        <h2>exhibitions</h2>
+    </a>
+
+    <a href="/collaborations">
+        <h2>collaborations</h2>
+    </a>
+
+     <a href="/projects">
+        <h2>all projects</h2>
+    </a>
+</div>
+</div>
+ 
+        
+
+        <div id="lamp">
+    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+</div>
+
+<script>
+      const invertBtn = document.getElementById('invertBtn');
+        if (invertBtn) {
+            invertBtn.addEventListener('click', () => {
+                const isInverted = document.body.classList.toggle('inverted');
+                localStorage.setItem('invertColors', isInverted);
+                invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
+            }
+            );
+
+            const saved = JSON.parse(localStorage.getItem('invertColors'));
+            if (saved) {
+                document.body.classList.add('inverted');
+                invertBtn.textContent = 'invert colors';
+            }
+        }
+</script>
+
+     <main id="projects">
+    <div class="project_img">
+         <img src="/assets/images/carriehott_ourshiver.jpg">
+         <h3>Our Shiver</h3>
+    </div>
+     <div class="project_img">
+         <img src="/assets/images/carriehott_whalefeed.png">
+         <h3>Container Ship</h3>
+    </div>
+      <div class="project_img">
+         <img src="/assets/images/carriehott_truecrime.png">
+         <h3>true crime</h3>
+    </div>
+        <div class="project_img">
+         <img src="/assets/images/9_CarrieHott_MotionZones.jpg">
+         <h3>Motion Zones</h3>
+    </div>
+         <div class="project_img">
+         <img src="/assets/images/CarrieHott_LightsSense_1.jpg">
+         <h3>The Lights that See Us</h3>
+    </div>
+    <div class="project_img">
+         <img src="/assets/images/13_CarrieHott_LightsThatSee_Print.jpg">
+         <h3>The Light that Elongated the Day</h3>
+    </div>
+      <div class="project_img">
+         <img src="/assets/images/SunsetOnThePolygon_CarrieHott_thumb.jpg">
+         <h3>Sunset on the Polygon</h3>
+    </div>
+      <div class="project_img">
+        <img src="/assets/images/2_SummerNightForever_CarrieHott.jpg">
+        <h3>Summer Night Forever</h3>
+    </div>
+           <div class="project_img">
+         <img src="/assets/images/18_CarrieHott_ARemoveAPlanAPlot.jpg">
+         <h3>A Remove, A Plan, A Plot</h3>
+    </div>
+        <div class="project_img">
+        <img src="/assets/images/10_KeyRoom_AndriaLo.jpg" alt="">
+        <h3>The Key Room</h3>
+    </div>
+         <div class="project_img">
+        <img src="/assets/images/1_HeadlandsArchive_CarrieHott.jpg" alt="">
+        <h3>The Archive Room</h3>
+    </div>
+      <div class="project_img">
+         <img src="/assets/images/CarrieHott_AfterHourDay_8.jpg">
+         <h3>After Hour</h3>
+    </div>
+
+   <div class="project_img">
+         <img src="/assets/images/StructuresFugitive_Bond_10.jpg">
+         <h3>Structure for the Fugitive</h3>
+    </div>
+     <div class="project_img">
+         <img src="/assets/images/carriehott_joan5000.png" width="50%">
+         <h3>JOAN5000</h3>
+    </div>
+
+</main>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "basehead.html" %}
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        {% include "nav.html" %}
+        {% block nav %}{% endblock %}
+
+        {% include "lamp.html" %}
+
+     {{ content | safe }}
+    </body>
+</html>

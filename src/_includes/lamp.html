@@ -1,0 +1,21 @@
+<div id="lamp">
+    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+</div>
+
+<script>
+      const invertBtn = document.getElementById('invertBtn');
+        if (invertBtn) {
+            invertBtn.addEventListener('click', () => {
+                const isInverted = document.body.classList.toggle('inverted');
+                localStorage.setItem('invertColors', isInverted);
+                invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
+            }
+            );
+
+            const saved = JSON.parse(localStorage.getItem('invertColors'));
+            if (saved) {
+                document.body.classList.add('inverted');
+                invertBtn.textContent = 'invert colors';
+            }
+        }
+</script>
