@@ -14,7 +14,7 @@
     <body>
         
    <a href="/menu">
-    <h2 id="name">Carrie Hott</h2>
+    <h2 id="name">carrie hott</h2>
     </a>
    <div id="navmenu">
     <div id="about_nav">
@@ -22,16 +22,14 @@
     <a href="/info">
         <h2>about</h2>
     </a>
-      <a href="/info">
+      <a href="/news">
         <h2>updates</h2>
     </a>
    
-    <a href="/info">
+    <a href="/contact">
         <h2>contact</h2>
     </a>
-         <a href="/info">
-        <h2>this site</h2>
-    </a>
+ 
 </div>
     <div id="project_nav">
         <h2 class="title">projects</h2>
@@ -119,21 +117,19 @@
 </div>
 
 <script>
-      const invertBtn = document.getElementById('invertBtn');
-        if (invertBtn) {
-            invertBtn.addEventListener('click', () => {
-                const isInverted = document.body.classList.toggle('inverted');
-                localStorage.setItem('invertColors', isInverted);
-                invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
-            }
-            );
-
-            const saved = JSON.parse(localStorage.getItem('invertColors'));
-            if (saved) {
-                document.body.classList.add('inverted');
-                invertBtn.textContent = 'invert colors';
-            }
-        }
+const invertBtn = document.getElementById('invertBtn');
+if (invertBtn) {
+  invertBtn.addEventListener('click', () => {
+    const isInverted = document.body.classList.toggle('inverted');
+    localStorage.setItem('invertColors', isInverted);
+    invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
+  });
+  
+  const saved = JSON.parse(localStorage.getItem('invertColors'));
+  if (saved) {
+    document.body.classList.add('inverted');
+  }
+}
 </script>
 
      <main id="projects">
