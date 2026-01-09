@@ -44,7 +44,7 @@ h2 {
 }
 
 p {
-  font-size: 1.10rem;
+  font-size: 1.1rem;
 }
 
 a {
@@ -112,6 +112,20 @@ a:hover {
   z-index: 100;
   right: 0;
   bottom: 7%;
+}
+
+#underconstruction {
+  width: 25%;
+  display: block;
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+}
+
+#underconstruction img {
+  width: 25%;
+   display: block;
+  margin: auto;
 }
 
 #joan5000 {
