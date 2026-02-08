@@ -1,0 +1,23 @@
+---
+layout: layouts/base.html
+title: update feed from carrie hott
+description: news and updates from carrie hott
+---
+
+<div class="updatefeed">
+  <h1>Updates: exhibitions, talks, & projects</h1>
+  <br>
+    <a href="/feed.xml" class="rss-subscribe">
+    📡 subscribe to updates via RSS 📡 
+  </a>
+  {% for item in news %}
+  <article class="feed_item" id="item{{ loop.index }}">
+    <h2>{{ item.title }}</h2>
+    <time>{{ item.date }}</time>
+    {% if item.image %}
+      <img src="{{ item.image }}" alt="{{ item.title }}">
+    {% endif %}
+    <p>{{ item.content }}</p>
+  </article>
+  {% endfor %}
+</div>

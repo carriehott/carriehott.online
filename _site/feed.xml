@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Carrie Hott News</title>
+  <link href="https://carriehott.com/feed.xml" rel="self"/>
+  <link href="https://carriehott.com/news.html"/>
+  <updated>2025-04-17T12:00:00Z</updated>
+  <id>https://yoursite.com/news.html</id>
+  <entry>
+    <title>Our Shiver opens at The Lab</title>
+    <link href="https://carriehott.com/news.html#item1"/>
+    <updated>2025-04-17T12:00:00Z</updated>
+    <id>https://yoursite.com/news.html#item1</id>
+    <content type="html"><![CDATA[Our Shiver opens at The Lab]]></content>
+  </entry>
+</feed>

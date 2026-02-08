@@ -1,0 +1,22 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Carrie Hott News</title>
+  <link href="https://carriehott.com/feed.xml" rel="self"/>
+  <link href="https://carriehott.com/news.html"/>
+  <updated>{{ news[0].date }}T12:00:00Z</updated>
+  <id>https://yoursite.com/news.html</id>
+  
+  {%- for item in news %}
+  <entry>
+    <title>{{ item.title }}</title>
+    <link href="https://carriehott.com/news.html#item{{ loop.index }}"/>
+    <updated>{{ item.date }}T12:00:00Z</updated>
+    <id>https://yoursite.com/news.html#item{{ loop.index }}</id>
+    <content type="html"><![CDATA[{{ item.content }}]]></content>
+  </entry>
+  {%- endfor %}
+</feed>

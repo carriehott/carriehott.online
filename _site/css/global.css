@@ -77,13 +77,12 @@ a:hover {
   z-index: 100;
   top: 0;
   left: 0;
-  font-size: 10pt;
-  overflow: scroll;
 }
 
 #navmenu a {
   transition: all 0.2s ease;
   margin-bottom: 1%;
+   font-size: .5rem; 
 }
 
 #about_nav,
@@ -91,11 +90,25 @@ a:hover {
 #media_nav {
   padding-top: 1%;
   padding-bottom: 3%;
+
 }
+
+#about_nav h3 {
+  font-size: .85rem;
+}
+
+#project_nav h3 {
+  font-size: .85rem;
+}
+
+#media_nav h3 {
+  font-size: .85rem;
+}
+
 
 .title {
   color: #d51f16;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 #back {
@@ -174,6 +187,10 @@ a:hover {
   transition: all 0.2s ease;
 }
 
+#bio p{
+  font-size: 1rem;
+}
+
 #pdf {
   grid-row: 2;
   grid-column: 1;
@@ -191,21 +208,66 @@ a:hover {
   transition: all 0.2s ease;
 }
 
-#phone {
-  grid-row: 1;
-  grid-column: 1;
+#contact {
+  padding: 1%;
+  margin-top: 20%; 
+  margin-left: 35%;
+  display: flex;
+  width: 75%; 
+  position: fixed;
+  transition: all 0.2s ease;
 }
 
 #phone img {
-  width: 50%;
+  width: 75%;
   justify-self: center;
 }
 
-#phone_text {
-  grid-row: 1;
-  grid-column: 2 / 4;
+.updatefeed {
+  padding: 1%;
+  margin-top: 1%; 
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  width: 75%; 
   transition: all 0.2s ease;
 }
+  
+.feed_item {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.feed_item time {
+  color: #666;
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.feed_item img {
+  max-width: 50%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.rss-subscribe {
+  width: 25%;
+  padding: 1%;  
+  background-color: #fbc6c3;
+  color: #070013; 
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.rss-subscribe:hover {
+ text-decoration: underline;
+}
+
+
 
 #site {
   grid-row: 6;
