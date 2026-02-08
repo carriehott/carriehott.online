@@ -128,7 +128,7 @@ a:hover {
 }
 
 #underconstruction {
-  width: 25%;
+  width: 20%;
   display: block;
   margin: auto;
   margin-top: 15%;
@@ -139,6 +139,10 @@ a:hover {
   width: 25%;
    display: block;
   margin: auto;
+}
+
+#underconstruction p {
+ font-size: 1rem;
 }
 
 #joan5000 {
@@ -234,8 +238,10 @@ a:hover {
 }
   
 .feed_item {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  width: 75%; 
+  margin-bottom: 5%;
+  padding: 5%;
+  border: 1px solid #d51f16;
 }
 .feed_item time {
   color: #666;
@@ -245,10 +251,16 @@ a:hover {
 }
 
 .feed_item img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   margin: 15px 0;
-  border-radius: 8px;
+}
+
+.feed_item a{
+   display: inline-block;
+margin-top: 2%; 
+font-size: 1.1rem;
+text-decoration: underline;
 }
 
 .rss-subscribe {
@@ -258,7 +270,7 @@ a:hover {
   color: #070013; 
   display: inline-block;
   text-decoration: none;
-  border-radius: 5px;
+  border: 1px solid #070013;
   margin-top: 2%;
   margin-bottom: 5%;
 }

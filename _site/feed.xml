@@ -3,13 +3,27 @@
   <title>Carrie Hott News</title>
   <link href="https://carriehott.com/feed.xml" rel="self"/>
   <link href="https://carriehott.com/news.html"/>
-  <updated>2025-04-17T12:00:00Z</updated>
+  <updated>2026-01-11T12:00:00Z</updated>
   <id>https://yoursite.com/news.html</id>
   <entry>
-    <title>Our Shiver opens at The Lab</title>
+    <title>&#39;years ago&#39; at Et al Gallery</title>
     <link href="https://carriehott.com/news.html#item1"/>
-    <updated>2025-04-17T12:00:00Z</updated>
+    <updated>2026-01-11T12:00:00Z</updated>
     <id>https://yoursite.com/news.html#item1</id>
-    <content type="html"><![CDATA[Our Shiver opens at The Lab]]></content>
+    <content type="html"><![CDATA[My solo exhibition, &#39;years ago&#39; at Et al Gallery in San Francisco opens on Friday, January 16 and will be up until February 28. The installation comes from my experience and research over the last year and a half focused on the industrialization of time, satellites, and snails.]]></content>
+  </entry>
+  <entry>
+    <title>&#39;Our Shiver&#39; publication available at The Lab</title>
+    <link href="https://carriehott.com/news.html#item2"/>
+    <updated>2025-07-11T12:00:00Z</updated>
+    <id>https://yoursite.com/news.html#item2</id>
+    <content type="html"><![CDATA[Our Shiver in print! The book is now available at The Lab. With Chris Hamamoto, I created a book that includes the project research and building process, along with includes commissioned essays from Chia Amisola, Jacob Kahn, Megan Prelinger, Andrea Steves, and Xiaowei Wang. These essays are included here in a book designed by Chris Hamamoto and printed by Colpa Press.]]></content>
+  </entry>
+  <entry>
+    <title>&#39;Our Shiver&#39; launches at The Lab</title>
+    <link href="https://carriehott.com/news.html#item3"/>
+    <updated>2025-04-17T12:00:00Z</updated>
+    <id>https://yoursite.com/news.html#item3</id>
+    <content type="html"><![CDATA[My project commission from The Lab will culminate on April 17 with a drop by preview of the solar powered web server. After three years of work, which included research into the The Lab&#39;s digital infrstructure, the trial and error of trying to make a solar powered web server, and many different versions of a website, Our Shiver is now installed onsite at The Lab and live at ourshiver.com. Come by the opening reception on April 17 at 6pm to check out the server and have a drink.]]></content>
   </entry>
 </feed>

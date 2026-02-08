@@ -5,7 +5,7 @@ description: news and updates from carrie hott
 ---
 
 <div class="updatefeed">
-  <h1>Updates: exhibitions, talks, & projects</h1>
+  <h1>Exhibitions, talks, & projects</h1>
   <br>
     <a href="/feed.xml" class="rss-subscribe">
     📡 subscribe to updates via RSS 📡 
@@ -18,6 +18,9 @@ description: news and updates from carrie hott
       <img src="{{ item.image }}" alt="{{ item.title }}">
     {% endif %}
     <p>{{ item.content }}</p>
+    {% if item.link %}
+      <a href="{{ item.link }}" target="_blank">{{ item.linkText }}</a>
+    {% endif %}
   </article>
   {% endfor %}
 </div>
