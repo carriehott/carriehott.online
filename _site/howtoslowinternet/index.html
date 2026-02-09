@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>how to slow internet by Carrie Hott</title>
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+<meta name="description" content="Interdisciplinary artist + designer + educator Carrie Hott">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/global.css">
+
+        
+    </head>
+    <body>
+        
+   <a href="/menu">
+    <h2 id="name">carrie hott</h2>
+    </a>
+
+   <div id="navmenu">
+        <div id="about_nav">
+            <h2 class="title">info</h2>
+            <a href="/info">
+                <h3>about</h3>
+            </a>
+            <a href="/news">
+                <h3>updates</h3>
+            </a>
+            <a href="/contact">
+                <h3>contact</h3>
+            </a>
+        </div>
+        <div id="project_nav">
+            <h2 class="title">projects</h2>
+            <a href="/howtoslowinternet">
+                <h3>how to slow internet</h3>
+            </a>
+            <a href="/ourshiver">
+                <h3>Our Shiver</h3>
+            </a>
+            <a href="/sixwigs">
+                <h3>Six Wigs</h3>
+            </a>
+            <a href="/fullship">
+                <h3>Ship Full</h3>
+            </a>
+            <a href="/lightsthatsee">
+                <h3>The Lights That See Us</h3>
+            </a>
+            <a href="/motionzones">
+                <h3>Motion Zones</h3>
+            </a>
+            <a href="/summernightforever">
+                <h3>Summer Night Forever</h3>
+            </a>
+            <a href="/thelightthatelongatedtheday">
+                <h3>The Light That Elongated The Day</h3>
+            </a>
+            <a href="/structureforthefugitive">
+                <h3>Structure for the Fugitive</h3>
+            </a>
+            <a href="/netsfortheunweighable">
+                <h3>Nets for the Unweighable</h3>
+            </a>
+            <a href="/aremoveaplanaplot">
+                <h3>A Remove, A Plan, A Plot</h3>
+            </a>
+            <a href="/thekeyroom">
+                <h3>The Key Room</h3>
+            </a>
+            <a href="/thearchiveroom">
+                <h3>The Archive Room</h3>
+            </a>
+            <a href="/afterhour">
+                <h3>After Hour</h3>
+            </a>
+            <a href="/fathomingacave">
+                <h3>Fathoming A Cave</h3>
+            </a>
+            <a href="/coverfire">
+                <h3>Cover Fire</h3>
+            </a>
+                <a href="/understandingawhalefall">
+            <h3>Understanding A Whale Fall</h3>
+            </a>
+        </div> 
+
+        <div id="media_nav">
+            <h2 class="title">media</h2>
+            <a href="/websites">
+                <h3>websites</h3>
+            </a>
+
+            <a href="/publications">
+                <h3>print media</h3>
+            </a>
+
+            <a href="/exhibitions">
+                <h3>exhibitions</h3>
+            </a>
+
+            <a href="/collaborations">
+                <h3>collaborations</h3>
+            </a>
+
+            <a href="/projects">
+                <h3>all projects</h3>
+            </a>
+        </div>
+    </div>
+ 
+        
+
+        <div id="lamp">
+    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+</div>
+
+<script>
+const invertBtn = document.getElementById('invertBtn');
+if (invertBtn) {
+  invertBtn.addEventListener('click', () => {
+    const isInverted = document.body.classList.toggle('inverted');
+    localStorage.setItem('invertColors', isInverted);
+    invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
+  });
+  
+  const saved = JSON.parse(localStorage.getItem('invertColors'));
+  if (saved) {
+    document.body.classList.add('inverted');
+  }
+}
+</script>
+
+     
+<main id="project_page">
+  <a href="https://howtoslowinternet.com/" target="_blank">
+    <img src="/assets/images/carriehott_howtoslowinternet.png" />
+  </a>
+
+  <div id="project_desc">
+    <h1 class="title">how to slow internet</h1>
+    <p>
+      collective project co stewarded by
+      <a href="https://andreasteves.com/" target="_blank" class="presslink"
+        >Andrea Steves</a
+      >
+      and
+      <a
+        href="https://www.timothyfurstnau.com/"
+        target="_blank"
+        class="presslink"
+        >Timothy Furstnau</a
+      >
+    </p>
+
+    <p>
+      how to slow internet is an artist project centrally focused on
+      experimentation with small scale communication technology in order to
+      better consider the large scale communications infrastructure on which we
+      increasingly depend.
+    </p>
+
+    <a href="/menu">
+      <p id="back">⬅ go back</p>
+    </a>
+  </div>
+</main>
+
+    </body>
+</html>
