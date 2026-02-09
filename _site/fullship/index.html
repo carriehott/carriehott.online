@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Ship full by Carrie Hott</title>
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+<meta name="description" content="Interdisciplinary artist + designer + educator Carrie Hott">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/global.css">
+
+        
+    </head>
+    <body>
+        
+   <a href="/menu">
+    <h2 id="name">carrie hott</h2>
+    </a>
+
+   <div id="navmenu">
+        <div id="about_nav">
+            <h2 class="title">info</h2>
+            <a href="/info">
+                <h3>about</h3>
+            </a>
+            <a href="/news">
+                <h3>updates</h3>
+            </a>
+            <a href="/contact">
+                <h3>contact</h3>
+            </a>
+        </div>
+        <div id="project_nav">
+            <h2 class="title">projects</h2>
+            <a href="/howtoslowinternet">
+                <h3>how to slow internet</h3>
+            </a>
+            <a href="/ourshiver">
+                <h3>Our Shiver</h3>
+            </a>
+            <a href="/sixwigs">
+                <h3>Six Wigs</h3>
+            </a>
+            <a href="/fullship">
+                <h3>Ship Full</h3>
+            </a>
+            <a href="/lightsthatsee">
+                <h3>The Lights That See Us</h3>
+            </a>
+            <a href="/motionzones">
+                <h3>Motion Zones</h3>
+            </a>
+            <a href="/summernightforever">
+                <h3>Summer Night Forever</h3>
+            </a>
+            <a href="/thelightthatelongatedtheday">
+                <h3>The Light That Elongated The Day</h3>
+            </a>
+            <a href="/structureforthefugitive">
+                <h3>Structure for the Fugitive</h3>
+            </a>
+            <a href="/netsfortheunweighable">
+                <h3>Nets for the Unweighable</h3>
+            </a>
+            <a href="/aremoveaplanaplot">
+                <h3>A Remove, A Plan, A Plot</h3>
+            </a>
+            <a href="/thekeyroom">
+                <h3>The Key Room</h3>
+            </a>
+            <a href="/thearchiveroom">
+                <h3>The Archive Room</h3>
+            </a>
+            <a href="/afterhour">
+                <h3>After Hour</h3>
+            </a>
+            <a href="/fathomingacave">
+                <h3>Fathoming A Cave</h3>
+            </a>
+            <a href="/coverfire">
+                <h3>Cover Fire</h3>
+            </a>
+                <a href="/understandingawhalefall">
+            <h3>Understanding A Whale Fall</h3>
+            </a>
+        </div> 
+
+        <div id="media_nav">
+            <h2 class="title">media</h2>
+            <a href="/websites">
+                <h3>websites</h3>
+            </a>
+
+            <a href="/publications">
+                <h3>print media</h3>
+            </a>
+
+            <a href="/exhibitions">
+                <h3>exhibitions</h3>
+            </a>
+
+            <a href="/collaborations">
+                <h3>collaborations</h3>
+            </a>
+
+            <a href="/projects">
+                <h3>all projects</h3>
+            </a>
+        </div>
+    </div>
+ 
+        
+
+        <div id="lamp">
+    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+</div>
+
+<script>
+const invertBtn = document.getElementById('invertBtn');
+if (invertBtn) {
+  invertBtn.addEventListener('click', () => {
+    const isInverted = document.body.classList.toggle('inverted');
+    localStorage.setItem('invertColors', isInverted);
+    invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
+  });
+  
+  const saved = JSON.parse(localStorage.getItem('invertColors'));
+  if (saved) {
+    document.body.classList.add('inverted');
+  }
+}
+</script>
+
+     
+<main id="project_page">
+  <a href="https://feeeeeeeeeed.com/" target="_blank">
+    <img src="/assets/images/carriehott_whalefeed.png" />
+  </a>
+
+  <div id="project_desc">
+    <h1 class="title">Ship full</h1>
+    <p>website</p>
+    <p>2023</p>
+
+    <p>
+      Ship full is a website that contains a scroll of over two hundred social
+      posts about one beached blue whale in Bolinas, California that showed
+      evidence of a ship strike. After my own direct experience with this
+      beached whale, I then searched for public geotagged posts about the same
+      whale, as a way to track the progress of the whale’s decay. I found and
+      collected over two hundred posts, each with its own caption and way of
+      contending with the massive animal and it’s human caused death. The
+      captions are all over the place but often reflect a struggle to find words
+      to describe what they are seeing.
+    </p>
+
+    <a href="/menu">
+      <p id="back">⬅ go back</p>
+    </a>
+  </div>
+</main>
+
+    </body>
+</html>
