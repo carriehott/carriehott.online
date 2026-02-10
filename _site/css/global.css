@@ -501,27 +501,21 @@ text-decoration: underline;
     display: none;
   }
 
-  #about_nav {
+  #navmenu {
+    width: 100%; 
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #070013;
+    align-items: flex-start;
     padding: 10px;
+    max-height: 100vh;
+    overflow-y: auto;
+
   }
 
-  #about_nav h2 {
-    margin-bottom: 10px;
-  }
-
-  #about_nav a {
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
-  }
 
   #lamp {
     position: absolute;
