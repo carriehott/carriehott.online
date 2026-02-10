@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>The Light That Elongated The Day by Carrie Hott</title>
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+<meta name="description" content="Interdisciplinary artist + designer + educator Carrie Hott">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/global.css">
+
+        
+    </head>
+    <body>
+        
+   <a href="/menu">
+    <h2 id="name">carrie hott</h2>
+    </a>
+
+   <div id="navmenu">
+        <div id="about_nav">
+            <h2 class="title">info</h2>
+            <a href="/info">
+                <h3>about</h3>
+            </a>
+            <a href="/news">
+                <h3>updates</h3>
+            </a>
+            <a href="/contact">
+                <h3>contact</h3>
+            </a>
+        </div>
+        <div id="project_nav">
+            <h2 class="title">projects</h2>
+            <a href="/howtoslowinternet">
+                <h3>how to slow internet</h3>
+            </a>
+              <a href="/yearsago">
+                <h3>years ago</h3>
+            </a>
+            <a href="/ourshiver">
+                <h3>Our Shiver</h3>
+            </a>
+            <a href="/sixwigs">
+                <h3>Six Wigs</h3>
+            </a>
+            <a href="/fullship">
+                <h3>Ship full</h3>
+            </a>
+            <a href="/lightsthatsee">
+                <h3>The Lights That Sense Us</h3>
+            </a>
+            <a href="/motionzones">
+                <h3>Motion Zones</h3>
+            </a>
+            <a href="/summernightforever">
+                <h3>Summer Night Forever</h3>
+            </a>
+            <a href="/thelightthatelongatedtheday">
+                <h3>The Light That Elongated The Day</h3>
+            </a>
+            <a href="/structureforthefugitive">
+                <h3>Structure for the Fugitive</h3>
+            </a>
+            <a href="/netsfortheunweighable">
+                <h3>Nets for the Unweighable</h3>
+            </a>
+            <a href="/aremoveaplanaplot">
+                <h3>A Remove, A Plan, A Plot</h3>
+            </a>
+            <a href="/thekeyroom">
+                <h3>The Key Room</h3>
+            </a>
+            <a href="/thearchiveroom">
+                <h3>The Archive Room</h3>
+            </a>
+            <a href="/afterhour">
+                <h3>After Hour</h3>
+            </a>
+            <a href="/fathomingacave">
+                <h3>Fathoming A Cave</h3>
+            </a>
+            <a href="/coverfire">
+                <h3>Cover Fire</h3>
+            </a>
+                <a href="/understandingawhalefall">
+            <h3>Understanding A Whale Fall</h3>
+            </a>
+        </div> 
+
+        <div id="media_nav">
+            <h2 class="title">media</h2>
+            <a href="/websites">
+                <h3>websites</h3>
+            </a>
+
+            <a href="/publications">
+                <h3>print media</h3>
+            </a>
+
+            <a href="/exhibitions">
+                <h3>exhibitions</h3>
+            </a>
+
+            <a href="/collaborations">
+                <h3>collaborations</h3>
+            </a>
+
+            <a href="/projects">
+                <h3>all projects</h3>
+            </a>
+        </div>
+    </div>
+ 
+        
+
+        <div id="lamp">
+    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+</div>
+
+<script>
+const invertBtn = document.getElementById('invertBtn');
+if (invertBtn) {
+  invertBtn.addEventListener('click', () => {
+    const isInverted = document.body.classList.toggle('inverted');
+    localStorage.setItem('invertColors', isInverted);
+    invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
+  });
+  
+  const saved = JSON.parse(localStorage.getItem('invertColors'));
+  if (saved) {
+    document.body.classList.add('inverted');
+  }
+}
+</script>
+
+     <main id="project_page">
+    
+    <div class="gallery">
+         <div class="gallery-item">
+                <img src="/assets/images/04_ElongatedLight.jpg">
+       </div>  
+           <div class="gallery-item">
+                <img src="/assets/images/LongLight_CarrieHott.jpg">
+       </div>   
+              <div class="gallery-item">
+                <img src="/assets/images/CarrieHott_ElongatedLight_Plinth3.jpg">
+       </div>  
+        <div class="gallery-item">
+                <img src="/assets/images/CarrieHott_ElongatedLight_Takeaway2.jpg">
+       </div>  
+         <div class="gallery-item">
+                <img src="/assets/images/05_ElongatedLightTakeaway.jpg">
+         </div>
+           <div class="gallery-item">
+                <img src="/assets/images/CarrieHott_ElongatedLight_Takeaway3.jpg">
+         </div>
+              <div class="gallery-item">
+                <img src="/assets/images/CarrieHott_ElongatedLight_NightLight.jpg">
+        </div> 
+         <div class="gallery-item">
+                <img src="/assets/images/06_ElongatedLightClass.jpg">
+        </div>
+       <div class="gallery-item">
+                <img src="/assets/images/16_CarrieHott_TheLightBook_Grid.png">
+       </div>    <div class="gallery-item">
+                <img src="/assets/images/15_CarrieHott_TheLightBook_247.png">
+       </div>    
+     
+    </div>
+
+     <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="prev">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+    <button class="lightbox-nav lightbox-next" id="next">&#10095;</button>
+    <div class="lightbox-counter" id="counter"></div>
+  </div>
+        
+  <script src="/js/lightbox.js"></script>
+
+  <div id="project_desc">
+            <h1 class="title">The Light That Elongated The Day</h1>
+            <p>Mixed Media Installation, Print, Class, and Book</p>
+            <p>Completed at the Museum of Capitalism in Oakland, CA</a> in 2017</p>
+            <br>
+
+            <p>This project was created for the <a href="https://www.museumofcapitalism.org/" target="_blank" class="presslink">The Museum of Capitalism</a>, a project curated by <a href="https://www.fictilis.com/" target="_blank" class="presslink">FICTILIS</a> that envisioned a world without capitalism by reflecting on it as an era passed.</p>
+
+        
+            <p>It included a site specific installation and takeaway print that referred to the existing light fixtures in the museum. The project also branched off into a free six-week class open to the public. The class explored the end of darkness, the elongation of the day, 24-7 culture, preppers, and more. These themes, when considered in the context of a museum that memorializes the era of capitalism, suggest that the ubiquitousness of light and of the grid has many parallels to the economic system of capitalism.</p>
+
+            <p>The class created a 95-page, black and white, blue-matte covered book, which included documentation of what was explored and created in the class, alongside contributions from each participant. The book was printed by <a href="https://www.irrelevantpress.com/store/thelight" target="_blank" class="presslink">Irrelevant Press</a> and is available as a <a href="https://drive.google.com/file/d/1BGsRCSJvLVWmuKD_5-aFUD1hT03wVJMo/view" target="_blank" class="presslink">PDF here.</a> </p>
+         <br>
+    <a href="/menu">
+            <p id="back">⬅ go back</p>
+            </a>
+    </div>
+</main>
+    </body>
+</html>

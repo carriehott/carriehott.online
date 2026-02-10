@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Motion Zones by Carrie Hott</title>
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+<meta name="description" content="Interdisciplinary artist + designer + educator Carrie Hott">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/global.css">
+
+        
+    </head>
+    <body>
+        
+   <a href="/menu">
+    <h2 id="name">carrie hott</h2>
+    </a>
+
+   <div id="navmenu">
+        <div id="about_nav">
+            <h2 class="title">info</h2>
+            <a href="/info">
+                <h3>about</h3>
+            </a>
+            <a href="/news">
+                <h3>updates</h3>
+            </a>
+            <a href="/contact">
+                <h3>contact</h3>
+            </a>
+        </div>
+        <div id="project_nav">
+            <h2 class="title">projects</h2>
+            <a href="/howtoslowinternet">
+                <h3>how to slow internet</h3>
+            </a>
+              <a href="/yearsago">
+                <h3>years ago</h3>
+            </a>
+            <a href="/ourshiver">
+                <h3>Our Shiver</h3>
+            </a>
+            <a href="/sixwigs">
+                <h3>Six Wigs</h3>
+            </a>
+            <a href="/fullship">
+                <h3>Ship full</h3>
+            </a>
+            <a href="/lightsthatsee">
+                <h3>The Lights That Sense Us</h3>
+            </a>
+            <a href="/motionzones">
+                <h3>Motion Zones</h3>
+            </a>
+            <a href="/summernightforever">
+                <h3>Summer Night Forever</h3>
+            </a>
+            <a href="/thelightthatelongatedtheday">
+                <h3>The Light That Elongated The Day</h3>
+            </a>
+            <a href="/structureforthefugitive">
+                <h3>Structure for the Fugitive</h3>
+            </a>
+            <a href="/netsfortheunweighable">
+                <h3>Nets for the Unweighable</h3>
+            </a>
+            <a href="/aremoveaplanaplot">
+                <h3>A Remove, A Plan, A Plot</h3>
+            </a>
+            <a href="/thekeyroom">
+                <h3>The Key Room</h3>
+            </a>
+            <a href="/thearchiveroom">
+                <h3>The Archive Room</h3>
+            </a>
+            <a href="/afterhour">
+                <h3>After Hour</h3>
+            </a>
+            <a href="/fathomingacave">
+                <h3>Fathoming A Cave</h3>
+            </a>
+            <a href="/coverfire">
+                <h3>Cover Fire</h3>
+            </a>
+                <a href="/understandingawhalefall">
+            <h3>Understanding A Whale Fall</h3>
+            </a>
+        </div> 
+
+        <div id="media_nav">
+            <h2 class="title">media</h2>
+            <a href="/websites">
+                <h3>websites</h3>
+            </a>
+
+            <a href="/publications">
+                <h3>print media</h3>
+            </a>
+
+            <a href="/exhibitions">
+                <h3>exhibitions</h3>
+            </a>
+
+            <a href="/collaborations">
+                <h3>collaborations</h3>
+            </a>
+
+            <a href="/projects">
+                <h3>all projects</h3>
+            </a>
+        </div>
+    </div>
+ 
+        
+
+        <div id="lamp">
+    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+</div>
+
+<script>
+const invertBtn = document.getElementById('invertBtn');
+if (invertBtn) {
+  invertBtn.addEventListener('click', () => {
+    const isInverted = document.body.classList.toggle('inverted');
+    localStorage.setItem('invertColors', isInverted);
+    invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
+  });
+  
+  const saved = JSON.parse(localStorage.getItem('invertColors'));
+  if (saved) {
+    document.body.classList.add('inverted');
+  }
+}
+</script>
+
+     <main id="project_page">  
+     <img src="/assets/images/carriehott_motionzones_3.jpg" class="project_img">
+    
+       <div class="gallery">
+            <div class="gallery-item">
+                <img src="/assets/images/carriehott_motionzones_1.jpg">
+            </div>    
+            <div class="gallery-item">
+                <img src="/assets/images/carriehott_motionzones_2.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/carriehott_motionzones_3.jpg">
+            </div>  
+              <div class="gallery-item">
+                <img src="/assets/images/carriehott_motionzones_5.jpg">
+            </div>  
+              <div class="gallery-item">
+                <img src="/assets/images/carriehott_motionzones_6.jpg">
+            </div>  
+              <div class="gallery-item">
+                <img src="/assets/images/carriehott_motionzones_7.jpg">
+            </div>  
+              <div class="gallery-item">
+                <img src="/assets/images/carriehott_motionzones_8.jpg">
+            </div>  
+              <div class="gallery-item">
+                <img src="/assets/images/carriehott_motionzones_9.jpg">
+            </div>
+     
+        </div>
+
+            <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="close">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="prev">&#10094;</button>
+            <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            </div>
+            <button class="lightbox-nav lightbox-next" id="next">&#10095;</button>
+            <div class="lightbox-counter" id="counter"></div>
+        </div>
+                
+        <script src="/js/lightbox.js"></script>
+
+
+  <div id="project_desc">
+            <h1 class="title">Motion Zones</h1>
+            <p>Inkjet print on vellum, limited edition</p>
+            <p>2019</p>
+            <p>Motion Zones is a limited edition booklet that includes images found online of screenshots from the home surveillance system, Ring. Each image shows the perspective from the system’s camera, looking out on to a front porch or yard. On top of each camera view is the Ring’s “motion zone” which is the area that is sensitive to motion and can trigger the system’s alert mechanism. These screenshots show the area of the infrastructure that is invisible in physical space, but viewable through the Ring app. </p>
+         <br>
+    <a href="/menu">
+            <p id="back">⬅ go back</p>
+            </a>
+    </div>
+</main>
+    </body>
+</html>
