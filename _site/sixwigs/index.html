@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Six Wigs by Carrie Hott</title>
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+<meta name="description" content="Interdisciplinary artist + designer + educator Carrie Hott">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/global.css">
+
+        
+    </head>
+    <body>
+        
+   <a href="/menu">
+    <h2 id="name">carrie hott</h2>
+    </a>
+
+   <div id="navmenu">
+        <div id="about_nav">
+            <h2 class="title">info</h2>
+            <a href="/info">
+                <h3>about</h3>
+            </a>
+            <a href="/news">
+                <h3>updates</h3>
+            </a>
+            <a href="/contact">
+                <h3>contact</h3>
+            </a>
+        </div>
+        <div id="project_nav">
+            <h2 class="title">projects</h2>
+            <a href="/howtoslowinternet">
+                <h3>how to slow internet</h3>
+            </a>
+            <a href="/ourshiver">
+                <h3>Our Shiver</h3>
+            </a>
+            <a href="/sixwigs">
+                <h3>Six Wigs</h3>
+            </a>
+            <a href="/fullship">
+                <h3>Ship full</h3>
+            </a>
+            <a href="/lightsthatsee">
+                <h3>The Lights That Sense Us</h3>
+            </a>
+            <a href="/motionzones">
+                <h3>Motion Zones</h3>
+            </a>
+            <a href="/summernightforever">
+                <h3>Summer Night Forever</h3>
+            </a>
+            <a href="/thelightthatelongatedtheday">
+                <h3>The Light That Elongated The Day</h3>
+            </a>
+            <a href="/structureforthefugitive">
+                <h3>Structure for the Fugitive</h3>
+            </a>
+            <a href="/netsfortheunweighable">
+                <h3>Nets for the Unweighable</h3>
+            </a>
+            <a href="/aremoveaplanaplot">
+                <h3>A Remove, A Plan, A Plot</h3>
+            </a>
+            <a href="/thekeyroom">
+                <h3>The Key Room</h3>
+            </a>
+            <a href="/thearchiveroom">
+                <h3>The Archive Room</h3>
+            </a>
+            <a href="/afterhour">
+                <h3>After Hour</h3>
+            </a>
+            <a href="/fathomingacave">
+                <h3>Fathoming A Cave</h3>
+            </a>
+            <a href="/coverfire">
+                <h3>Cover Fire</h3>
+            </a>
+                <a href="/understandingawhalefall">
+            <h3>Understanding A Whale Fall</h3>
+            </a>
+        </div> 
+
+        <div id="media_nav">
+            <h2 class="title">media</h2>
+            <a href="/websites">
+                <h3>websites</h3>
+            </a>
+
+            <a href="/publications">
+                <h3>print media</h3>
+            </a>
+
+            <a href="/exhibitions">
+                <h3>exhibitions</h3>
+            </a>
+
+            <a href="/collaborations">
+                <h3>collaborations</h3>
+            </a>
+
+            <a href="/projects">
+                <h3>all projects</h3>
+            </a>
+        </div>
+    </div>
+ 
+        
+
+        <div id="lamp">
+    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+</div>
+
+<script>
+const invertBtn = document.getElementById('invertBtn');
+if (invertBtn) {
+  invertBtn.addEventListener('click', () => {
+    const isInverted = document.body.classList.toggle('inverted');
+    localStorage.setItem('invertColors', isInverted);
+    invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
+  });
+  
+  const saved = JSON.parse(localStorage.getItem('invertColors'));
+  if (saved) {
+    document.body.classList.add('inverted');
+  }
+}
+</script>
+
+     
+
+
+<main id="project_page">
+            <a href="https://vimeo.com/894762356?fl=pl&fe=sh" target="_blank">
+                <img src="/assets/images/carriehott_truecrime.png" class="project_img">
+            </a>
+
+  <div id="project_desc">
+    <h1 class="title">Six Wigs</h1>
+    <p>digital video and performance lecture</p>
+    <p>2023</p>
+
+    <p> Drawing from my own experience as an actor in true crime reenactment shows over five ‘gigs’ in 2021 and 2022, True Crime is a project based on my own participation and related research in the “true crime entertainment” industry. The project is a way to consider the implications of the true crime genre as entertainment and its popularity in this time of constant content and storytelling consumption through seemingly infinite streaming options. </p>
+
+    <p>I was initially driven by curiosity and the extra income to be a reenactment actor, but after one episode shoot I became fascinated with the theatrical process of the production. In television specifically, there is a “close but not exact” strategy employed across all forms of portrayal, and a blur effect in post production used to hide the inaccuracies and emphasize the idea of memory. I am curious about the implications of this approximation, and what this means for a medium so widely consumed and referenced as “true”. I wonder about what this narrative representation strategy reifies and perpetuates, in a genre so closely tied to perceptions of the justice system.</p>
+
+    <a href="/menu">
+      <p id="back">⬅ go back</p>
+    </a>
+  </div>
+</main>
+
+    </body>
+</html>
