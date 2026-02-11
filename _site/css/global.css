@@ -166,7 +166,7 @@ a:hover {
   margin-top: 3%;
   margin-left: 25%;
   margin-right: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 200px;
   display: grid;
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 15rem 35% 35%;
