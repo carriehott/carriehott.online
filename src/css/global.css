@@ -140,7 +140,7 @@ a:hover {
   grid-row: 1;
   grid-column: 2 / 4;
   width: 100%;
- font-size: 1rem;
+ font-size: .5rem;
 }
 
 #joan5000 {
@@ -166,7 +166,7 @@ a:hover {
   margin-top: 3%;
   margin-left: 25%;
   margin-right: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 25px;
   display: grid;
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 15rem 35% 35%;
