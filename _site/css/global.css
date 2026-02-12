@@ -535,3 +535,8 @@ text-decoration: underline;
     left: 10px;
   }
 }
+
+body.inverted {
+  background-color: white;
+  color: black;
+}
