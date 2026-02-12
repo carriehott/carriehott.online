@@ -3,6 +3,11 @@
     <head>
         {% include "basehead.html" %}
         {% block head %}{% endblock %}
+        <script>
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                window.location.replace('/projects');
+            }
+        </script>
     </head>
     <body>
 

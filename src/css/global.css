@@ -530,13 +530,24 @@ a:hover {
     left: 10px;
   }
 
+  #projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    margin-top: 15%;
+    margin-right: 5%;
+    margin-left: 5%;
+    transition: all 0.2s ease;
+  }
+
   .gallery {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
     margin: 1%;
-    margin-top: 3%;
+    margin-top: 15%;
     margin-bottom: 3%;
     transition: all 0.2s ease;
   }
