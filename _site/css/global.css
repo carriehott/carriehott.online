@@ -272,6 +272,7 @@ a:hover {
   border: 1px solid #070013;
   margin-top: 2%;
   margin-bottom: 2%;
+  text-align: center;
 }
 
 .rss-subscribe:hover {
@@ -287,6 +288,7 @@ a:hover {
   color: #070013;
   background-color: #fbc6c3;
   margin-bottom: 3%;
+  text-align: center;
 }
 
 #press {
@@ -545,6 +547,21 @@ a:hover {
     width: 100%;
   }
 
+  #project_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15%;
+    margin-right: 5%;
+    margin-left: 5%;
+    transition: all 0.2s ease;
+  }
+
+   #project_page img {
+    width: 100%;
+  }
+
   .gallery {
     display: flex;
     flex-direction: column;
@@ -626,6 +643,39 @@ a:hover {
     grid-row: auto;
     grid-column: 2 / 3;
   }
+
+  .updatefeed {
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .rss-subscribe {
+    width: 100%;
+    margin-top: 5%;
+    font-size: 1rem;
+  }
+
+  .embeddable-buttondown-form {
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 1rem;
+  }
+
+  .feed_item {
+    width: 100%;
+  }
+
+  #contact {
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
 body.inverted {
