@@ -23,16 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
   if (isMobile) {
-    aboutNav.style.display = 'none';
+    navmenu.style.display = 'none';
 
     lamp.addEventListener('click', () => {
-      aboutNav.style.display = aboutNav.style.display === 'none' ? 'flex' : 'none';
-    });
-
-    document.addEventListener('click', (event) => {
-      if (!aboutNav.contains(event.target) && !lamp.contains(event.target)) {
-        aboutNav.style.display = 'none';
-      }
+      navmenu.style.display = navmenu.style.display === 'none' ? 'flex' : 'none';
     });
   }
 });
