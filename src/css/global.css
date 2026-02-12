@@ -500,8 +500,9 @@ text-decoration: underline;
   }
 
   #navmenu {
-    background-color: #fbc6c3;
+    background-color: #fbc6c3b7;
     border: #070013 solid 1px;
+    color: #070013;
     width: 85%; 
     position: fixed;
     top: 0;
