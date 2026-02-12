@@ -533,6 +533,7 @@ a:hover {
   #projects {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
     width: 90%;
     margin-top: 15%;
@@ -541,6 +542,11 @@ a:hover {
     transition: all 0.2s ease;
   }
 
+  #project_img {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+  
   .gallery {
     display: flex;
     flex-direction: column;
