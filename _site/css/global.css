@@ -475,18 +475,26 @@ a:hover {
 }
 
 .audio-item {
-  align-self: flex-end;
-  padding-bottom: 3%;
+  align-content: center;
+ text-align: center;
+  aspect-ratio: 1/1;
+  padding: 3%;
   margin-right: 5%;
+  border: #d51f16 solid 1px;
 }
 .audio-item audio {
-  width: 100%;
+  width: 75%;
   background-color: #d51f16;
+    border: #d51f16 solid 1px;
 }
 
 .audio-item h2 {
-  font-size: 1rem;
+  font-size: .75rem;
   margin-bottom: 5%;
+}
+
+.fivegigs {
+  box-shadow: #2f2e2a 0px 1px 1px;
 }
 
 /* Default styles for larger screens */
