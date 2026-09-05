@@ -12,6 +12,7 @@
         
     </head>
     <body>
+     <!-- turned off nav on the left  
         
    <a href="/menu">
     <h2 id="name">carrie hott</h2>
@@ -115,37 +116,76 @@
         </div>
     </div>
  
-        
+         -->   
 
-        <div id="lamp">
-    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
-</div>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+  <img src="/assets/images/lampgif_peach_small.gif" alt="menu toggle" class="toggle-tab-icon">
+</button>
+
+  <a href="/index">
+    <h1 id="name">carrie hott</h1>
+    </a>
+
+<nav id="sitemenu" class="site-menu">
+    <div id="navmenu">
+
+            <a href="/info">
+                <h1 class="title">about</h1>
+            </a>
+               <a href="/contact">
+                <h1 class="title">contact</h1>
+            </a>
+            <a href="/news">
+                <h1 class="title">updates</h1>
+            </a>
+               <a href="/projects">
+               <h1 class="title">all projects</h1>
+            </a>
+            <a href="/websites">
+                <h1 class="title">websites</h1>
+            </a>
+
+            <a href="/publications">
+                <h1 class="title">print media</h1>
+            </a>
+
+            <a href="/exhibitions">
+                <h1 class="title">exhibitions</h1>
+            </a>
+
+            <a href="/collaborations">
+                <h1 class="title">collaborations</h1>
+            </a>
+        </div>
+
+  <div id="lamp">
+    <img src="/assets/images/lampgif_peach_small.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+  </div>
+</nav>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  // dark/light toggle
   const invertBtn = document.getElementById('invertBtn');
   if (invertBtn) {
     invertBtn.addEventListener('click', () => {
       const isInverted = document.body.classList.toggle('inverted');
       localStorage.setItem('invertColors', isInverted);
-      invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
     });
-    
     const saved = JSON.parse(localStorage.getItem('invertColors'));
     if (saved) {
       document.body.classList.add('inverted');
     }
   }
 
-  const aboutNav = document.getElementById('about_nav');
-  const lamp = document.getElementById('lamp');
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  // mobile menu open/close
+  const siteMenu = document.getElementById('sitemenu');
+  const menuToggle = document.getElementById('menuToggle');
 
-  if (isMobile) {
-    navmenu.style.display = 'none';
-
-    lamp.addEventListener('click', () => {
-      navmenu.style.display = navmenu.style.display === 'none' ? 'flex' : 'none';
+  if (menuToggle && siteMenu) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = siteMenu.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
     });
   }
 });
@@ -153,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
      
 <div class="updatefeed">
-  <h1>Exhibitions, talks, & projects</h1>
   <br>
     <a href="/feed.xml" class="rss-subscribe">
     📡 subscribe to updates via RSS 📡 
@@ -171,6 +210,42 @@ document.addEventListener('DOMContentLoaded', () => {
 </form>
   
   <article class="feed_item" id="item1">
+    <h2>PLASMA Talk at University of Buffalo</h2>
+    <time>2026-04-27</time>
+    
+      <img src="/assets/images/PLASMA_CarrieHott.png" alt="PLASMA Talk at University of Buffalo">
+    
+    <p>In March 2026, I was one of the PLASMA Speakers in the Media Studies program at University of Buffalo in Buffalo, NY.</p>
+    
+      <a href="https://www.youtube.com/watch?v=sDlOFt5Qdzo" target="_blank">Watch the talk here</a>
+    
+  </article>
+  
+  <article class="feed_item" id="item2">
+    <h2>Nice Work Podcast interview</h2>
+    <time>2026-02-27</time>
+    
+      <img src="/assets/images/NiceWorkPodcast_CarrieHott.png" alt="Nice Work Podcast interview">
+    
+    <p>Unedited interview with Kate Young for WFIU&#39;s Nice Work Podcast. This is the unedited version of the interview, which was edited down for the podcast.</p>
+    
+      <a href="https://www.youtube.com/watch?v=s9HkqJ0YPMU" target="_blank">Watch the interview here</a>
+    
+  </article>
+  
+  <article class="feed_item" id="item3">
+    <h2>years ago review in Square Cylinder</h2>
+    <time>2026-02-19</time>
+    
+      <img src="/assets/images/yearsago_press.png" alt="years ago review in Square Cylinder">
+    
+    <p>My solo exhibition, &#39;years ago&#39; at Et al Gallery in San Francisco was reviewed in Square Cylinder by Caroline Picard.</p>
+    
+      <a href="https://www.squarecylinder.com/2026/02/carrie-hott-et-al-san-francisco-review/" target="_blank">Read the review here</a>
+    
+  </article>
+  
+  <article class="feed_item" id="item4">
     <h2>years ago at Et al Gallery</h2>
     <time>2026-01-11</time>
     
@@ -182,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
   </article>
   
-  <article class="feed_item" id="item2">
+  <article class="feed_item" id="item5">
     <h2>Our Shiver publication available at The Lab</h2>
     <time>2025-07-11</time>
     
@@ -194,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
   </article>
   
-  <article class="feed_item" id="item3">
+  <article class="feed_item" id="item6">
     <h2>&#39;Our Shiver&#39; launches at The Lab</h2>
     <time>2025-04-17</time>
     

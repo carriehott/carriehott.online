@@ -12,6 +12,7 @@
         
     </head>
     <body>
+     <!-- turned off nav on the left  
         
    <a href="/menu">
     <h2 id="name">carrie hott</h2>
@@ -115,37 +116,76 @@
         </div>
     </div>
  
-        
+         -->   
 
-        <div id="lamp">
-    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
-</div>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+  <img src="/assets/images/lampgif_peach_small.gif" alt="menu toggle" class="toggle-tab-icon">
+</button>
+
+  <a href="/index">
+    <h1 id="name">carrie hott</h1>
+    </a>
+
+<nav id="sitemenu" class="site-menu">
+    <div id="navmenu">
+
+            <a href="/info">
+                <h1 class="title">about</h1>
+            </a>
+               <a href="/contact">
+                <h1 class="title">contact</h1>
+            </a>
+            <a href="/news">
+                <h1 class="title">updates</h1>
+            </a>
+               <a href="/projects">
+               <h1 class="title">all projects</h1>
+            </a>
+            <a href="/websites">
+                <h1 class="title">websites</h1>
+            </a>
+
+            <a href="/publications">
+                <h1 class="title">print media</h1>
+            </a>
+
+            <a href="/exhibitions">
+                <h1 class="title">exhibitions</h1>
+            </a>
+
+            <a href="/collaborations">
+                <h1 class="title">collaborations</h1>
+            </a>
+        </div>
+
+  <div id="lamp">
+    <img src="/assets/images/lampgif_peach_small.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+  </div>
+</nav>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  // dark/light toggle
   const invertBtn = document.getElementById('invertBtn');
   if (invertBtn) {
     invertBtn.addEventListener('click', () => {
       const isInverted = document.body.classList.toggle('inverted');
       localStorage.setItem('invertColors', isInverted);
-      invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
     });
-    
     const saved = JSON.parse(localStorage.getItem('invertColors'));
     if (saved) {
       document.body.classList.add('inverted');
     }
   }
 
-  const aboutNav = document.getElementById('about_nav');
-  const lamp = document.getElementById('lamp');
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  // mobile menu open/close
+  const siteMenu = document.getElementById('sitemenu');
+  const menuToggle = document.getElementById('menuToggle');
 
-  if (isMobile) {
-    navmenu.style.display = 'none';
-
-    lamp.addEventListener('click', () => {
-      navmenu.style.display = navmenu.style.display === 'none' ? 'flex' : 'none';
+  if (menuToggle && siteMenu) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = siteMenu.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
     });
   }
 });

@@ -12,6 +12,7 @@
         
     </head>
     <body>
+     <!-- turned off nav on the left  
         
    <a href="/menu">
     <h2 id="name">carrie hott</h2>
@@ -115,37 +116,76 @@
         </div>
     </div>
  
-        
+         -->   
 
-        <div id="lamp">
-    <img src="/assets/images/lampgif_peach.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
-</div>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+  <img src="/assets/images/lampgif_peach_small.gif" alt="menu toggle" class="toggle-tab-icon">
+</button>
+
+  <a href="/index">
+    <h1 id="name">carrie hott</h1>
+    </a>
+
+<nav id="sitemenu" class="site-menu">
+    <div id="navmenu">
+
+            <a href="/info">
+                <h1 class="title">about</h1>
+            </a>
+               <a href="/contact">
+                <h1 class="title">contact</h1>
+            </a>
+            <a href="/news">
+                <h1 class="title">updates</h1>
+            </a>
+               <a href="/projects">
+               <h1 class="title">all projects</h1>
+            </a>
+            <a href="/websites">
+                <h1 class="title">websites</h1>
+            </a>
+
+            <a href="/publications">
+                <h1 class="title">print media</h1>
+            </a>
+
+            <a href="/exhibitions">
+                <h1 class="title">exhibitions</h1>
+            </a>
+
+            <a href="/collaborations">
+                <h1 class="title">collaborations</h1>
+            </a>
+        </div>
+
+  <div id="lamp">
+    <img src="/assets/images/lampgif_peach_small.gif" alt="animated gif of a simple table lamp flickering on and off" id="invertBtn" class="adjust-button">
+  </div>
+</nav>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  // dark/light toggle
   const invertBtn = document.getElementById('invertBtn');
   if (invertBtn) {
     invertBtn.addEventListener('click', () => {
       const isInverted = document.body.classList.toggle('inverted');
       localStorage.setItem('invertColors', isInverted);
-      invertBtn.textContent = isInverted ? 'invert colors' : 'invert colors';
     });
-    
     const saved = JSON.parse(localStorage.getItem('invertColors'));
     if (saved) {
       document.body.classList.add('inverted');
     }
   }
 
-  const aboutNav = document.getElementById('about_nav');
-  const lamp = document.getElementById('lamp');
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  // mobile menu open/close
+  const siteMenu = document.getElementById('sitemenu');
+  const menuToggle = document.getElementById('menuToggle');
 
-  if (isMobile) {
-    navmenu.style.display = 'none';
-
-    lamp.addEventListener('click', () => {
-      navmenu.style.display = navmenu.style.display === 'none' ? 'flex' : 'none';
+  if (menuToggle && siteMenu) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = siteMenu.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
     });
   }
 });
@@ -169,6 +209,8 @@ designed by Chris Hamamoto, printed by Colpa Press, published by The Lab, June
 
 <h3>Videos & Podcasts</h3> 
 
+<p><a href="https://www.youtube.com/watch?v=s9HkqJ0YPMU" target="_blank" class="presslink">Doing It Wrong on Purpose: Carrie Hott</a>, WFIU Nice Work Podcast, 2026</p>
+
 <p><a href="https://www.youtube.com/watch?v=VlIVvxme-hc" target="_blank" class="presslink">Pulled Apart Conversation with Chris Brooks, Adam Chin, and Carrie Hott</a>, USF Thacher Gallery, 2021</p>
 
 <p><a href="https://www.youtube.com/watch?v=OBqcBdGbgms" target="_blank" class="presslink">Pulled Apart opening and conversation</a>, USF Thacher Gallery, 2021</p>
@@ -184,6 +226,8 @@ designed by Chris Hamamoto, printed by Colpa Press, published by The Lab, June
 <p><a href="https://www.youtube.com/watch?v=X52CzhYi9Ss" target="_blank" class="presslink">Understanding a Whale Fall / Whale Watch at Adobe Books</a>, 2010</p>
 
 <h3>Press</h3>
+
+<p>Caroline Picard, <a href="www.squarecylinder.com/2026/02/carrie-hott-et-al-san-francisco-review/" target="_blank" class="presslink">"Carrie Hott: 'years ago' at Et al San Francisco,"</a> Square Cylinder, September 2026, Web.</p>
 
 <p>Ian Stewart, <a href="https://ianastewartblog.wordpress.com/2018/05/31/making-waves-100-artists-putting-the-east-bay-on-the-map-san-francisco-magazine/" target="_blank" class="presslink">“Making Waves: 100 Artists Putting the East Bay on the Map,”</a> San Francisco Magazine, June 2019. Web.</p>
 
