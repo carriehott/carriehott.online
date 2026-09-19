@@ -27,6 +27,16 @@ body.inverted #project_desc {
   border: #fcfbf9 solid 1px;
 }
 
+body.inverted .rss-subscribe {
+  color: #fcfbf9;
+  border: #fcfbf9 solid 1px;
+}
+
+body.inverted .embeddable-buttondown-form {
+  color: #fcfbf9;
+  border: #fcfbf9 solid 1px;
+}
+
 body.inverted #project_desc a {
   color: #fd958f;
 }
@@ -36,6 +46,14 @@ body.inverted #back {
 }
 
 body.inverted #navmenu .title {
+   color: #fd958f;
+}
+
+body.inverted #name {
+   color: #fd958f;
+}
+
+body.inverted #name-highlight {
    color: #fd958f;
 }
 
@@ -85,14 +103,19 @@ a:hover {
 }
 
 #name {
-  color: #d51f16;
-  width: 50%;
-  font-size: 1.75rem;
+  color: #07001385;
+  width: 100%;
+  font-size: 1.50rem;
   position: fixed;
   top: 0;
-  left: 1%;
+  left: 0%;
   padding-left: 1%;
-  z-index: 1100;
+  z-index: -100;
+}
+
+#name-highlight {
+  color: #070013;
+  text-decoration: underline;
 }
 
 #about_nav,
@@ -168,7 +191,7 @@ a:hover {
 }
 
 .project_img img:hover {
-  opacity: 0.5;
+
   transition: all 0.5s ease;
 }
 
@@ -242,15 +265,15 @@ a:hover {
 
 .updatefeed {
   padding: 1%;
-  margin-top: 5%;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 90%;
   transition: all 0.2s ease;
 }
 
 .feed_item {
-  width: 75%;
+  width: 85%;
   margin-bottom: 5%;
   padding: 5%;
   border: 1px solid #d51f16;
@@ -277,7 +300,7 @@ a:hover {
 }
 
 .rss-subscribe {
-  width: 75%;
+  width: 85%;
   padding: 1%;
   color: #070013;
   display: inline-block;
@@ -297,7 +320,7 @@ a:hover {
   padding-top: 1%;
   padding-left: 1%;
   display: inline-block;
-  width: 75%;
+  width: 85%;
   color: #070013;
   margin-bottom: 3%;
 }
@@ -326,9 +349,11 @@ a:hover {
 
 #projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(40vw, 22rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(40vw, 20rem), 1fr));
+  grid-gap: 3rem;
+  aspect-ratio: 1/1;
   width: 80%;
-  margin-top: 3%;
+  margin-top: 15%;
   margin-right: 5%;
   transition: all 0.2s ease;
 }
@@ -351,12 +376,23 @@ a:hover {
 #project_page {
   width: 85%;
   margin-top: 3%;
-  padding: 3%;
+  padding: 3%; 
   transition: all 0.2s ease;
 }
 
 .project_img,
 .exhibition_img {
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+}
+
+.project_img:hover,
+.exhibition_img:hover {
+    filter: grayscale(0);
+}
+
+.project_img {
+  width: 100%;
   margin: 3%;
   aspect-ratio: 2/ 1;
   align-self: top;
@@ -388,7 +424,6 @@ a:hover {
 }
 
 .gallery-item:hover img {
-  opacity: 0.5;
   mix-blend-mode: screen;
 }
 
@@ -522,6 +557,13 @@ a:hover {
 
 /* Styles for smaller screens */
 @media (max-width: 768px) {
+
+  #name {
+    font-size: 1rem;
+    padding-left: 3%;
+    line-height: 1.5rem;
+  }
+
   .site-menu {
     width: 75vw;
     transform: translateX(100%);
@@ -554,7 +596,6 @@ a:hover {
 
   #navmenu {
     background-color: #fbf8f8eb;
-    border: #070013 solid 1px;
     color: #070013;
     width: 50%;
     position: fixed;
@@ -582,10 +623,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
-    margin-top: 15%;
+    width: 85%;
     margin-right: 5%;
     margin-left: 5%;
+    margin-top: 40%;
     transition: all 0.2s ease;
   }
 
@@ -598,7 +639,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
-    margin-top: 15%;
+    margin-top: 30%;
     margin-right: 5%;
     margin-left: 5%;
     transition: all 0.2s ease;
@@ -614,7 +655,7 @@ a:hover {
     gap: 1rem;
     width: 100%;
     margin: 1%;
-    margin-top: 15%;
+    margin-top: 30%;
     margin-bottom: 3%;
     transition: all 0.2s ease;
   }
@@ -629,7 +670,7 @@ a:hover {
 
   #info {
     width: 90%;
-    margin-top: 20%;
+    margin-top: 50%;
     margin-right: 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
