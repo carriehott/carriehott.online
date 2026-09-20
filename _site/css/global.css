@@ -24,21 +24,25 @@ body.inverted {
 body.inverted #project_desc {
   background-color: #070013;
   color: #fcfbf9;
-  border: #fcfbf9 solid 1px;
+  border: #fdde8f solid 1px;
 }
 
 body.inverted .rss-subscribe {
   color: #fcfbf9;
-  border: #fcfbf9 solid 1px;
+  border: #fdde8f solid 1px;
 }
 
 body.inverted .embeddable-buttondown-form {
   color: #fcfbf9;
-  border: #fcfbf9 solid 1px;
+  border: #fdde8f solid 1px;
+}
+
+body.inverted .feed_item {
+  border: #fdde8f solid 1px;
 }
 
 body.inverted #project_desc a {
-  color: #fd958f;
+  color: #fdde8f;
 }
 
 body.inverted #back {
@@ -46,15 +50,15 @@ body.inverted #back {
 }
 
 body.inverted #navmenu .title {
-   color: #fd958f;
+   color: #fdde8f;
 }
 
 body.inverted #name {
-   color: #fd958f;
+   color: #fdde8f;
 }
 
 body.inverted #name-highlight {
-   color: #fd958f;
+   color: #fdde8f;
 }
 
 body.inverted #info {
@@ -155,7 +159,7 @@ a:hover {
   width: 20%;
   padding: 1%;
   font-size: 1rem;
-  border: #fbf9f0 1px solid;
+  border: #fdde8f 1px solid;
 }
 
 #lamp {
@@ -268,7 +272,7 @@ a:hover {
   width: 85%;
   margin-bottom: 5%;
   padding: 5%;
-  border: 1px solid #d51f16;
+  border: 1px solid #070013;
 }
 
 .feed_item time {
@@ -587,8 +591,8 @@ a:hover {
   }
 
   #navmenu {
-    background-color: #fbf8f8eb;
-    color: #070013;
+    background-color: #070013bd;
+    color: #fdde8f;
     width: 50%;
     position: fixed;
     top: 0;
