@@ -333,7 +333,7 @@ a:hover {
 
 .presslink {
   text-decoration: underline;
-  color: #d51f16;
+  color: #f75707;
 }
 
 #site {
@@ -366,7 +366,7 @@ a:hover {
 }
 
 #project_desc a {
-  color: #d51f16;
+  color: #f75707;
 }
 
 #project_page {
@@ -409,7 +409,7 @@ a:hover {
   overflow: hidden;
   cursor: pointer;
   aspect-ratio: 1;
-  background-color: #d51f16;
+  background-color: #f75707;
 }
 
 .gallery-item img {
